@@ -1,3 +1,6 @@
+# Component Library
+Going to be a basic site with components like buttons and text to view/play around with effects.
+
 # Starter for Next.js with styled-components
 
 This is a simple starter repo for starting a Next.js project with Next.js and SSR styled-components. In addition to a typical Next.js project, it includes the following setup:
