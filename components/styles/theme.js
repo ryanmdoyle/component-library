@@ -4,7 +4,7 @@ const theme = {
   darkPurple: '#260C3F',
   green: '#4DA585',
   orange: '#F2A35E',
-  maxWidth: 1200,
+  maxWidth: '1200px',
 };
 
 export default theme;
