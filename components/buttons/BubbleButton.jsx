@@ -2,15 +2,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SwipeButton = () => (
+const BubbleButton = () => (
   <>
-    <Swipe href="#">
-      Swipe
-    </Swipe>
+    <Bubble href="#">
+      Bubble
+    </Bubble>
   </>
 );
 
-const Swipe = styled.a`
+const Bubble = styled.a`
   text-decoration: none;
   color: black;
   font-family: sans-serif;
@@ -24,20 +24,20 @@ const Swipe = styled.a`
   :before {
     content: '';
     position: absolute;
-    left: 0;
-    top: 0;
-    background-color: yellow;
-    height: 100%;
-    width: 110%;
+    left: -300px;
+    top: -500px;
+    background-color: lavender;
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
     z-index: -1;
-    transform-origin: bottom left;
-    transform: rotate(-90deg);
-    transition: transform 0.3s;
+    transform-origin: top left;
+    transition: transform 1.2s;
   }
 
   :hover:before {
-    transform: rotate(0deg);
+    transform: translate(280px, 300px)
   }
 `;
 
-export default SwipeButton;
+export default BubbleButton;

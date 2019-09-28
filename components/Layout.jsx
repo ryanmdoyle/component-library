@@ -9,7 +9,9 @@ const Layout = ({ children }) => (
 );
 
 const LayoutStyled = styled.div`
-  margin: 0;
+  max-width: 900px;
+  margin: 1rem auto;
+  overflow: hidden;
 `;
 
 Layout.propTypes = {
