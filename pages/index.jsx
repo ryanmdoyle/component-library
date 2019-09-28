@@ -1,14 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 
 const index = () => (
-  <Title>
-    This is a Title!
-  </Title>
+  <>
+    <h1>Hello!</h1>
+  </>
 );
-
-const Title = styled.h1`
-  color: red;
-`;
 
 export default index;
