@@ -2,8 +2,7 @@
 import React from 'react';
 import App from 'next/app';
 
-import Layout from '../components/Layout';
-import Nav from '../components/Nav';
+import Page from '../components/Page';
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -21,12 +20,9 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <>
-        <Nav />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </>
+      <Page>
+        <Component {...pageProps} />
+      </Page>
     );
   }
 }
