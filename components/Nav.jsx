@@ -27,12 +27,14 @@ const Header = styled.header`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 50px;
+  height: auto;
   border-bottom: 1px solid black;
 `;
 
 const NavStyled = styled.nav`
   ul {
+    margin: 0.25rem 0 1rem 0;
+    padding: 0;
     list-style-type: none;
   }
   li {
@@ -41,11 +43,10 @@ const NavStyled = styled.nav`
     font-family: sans-serif;
     font-size: 24px;
     font-weight: bold;
-
   }
   a {
     text-decoration: none;
-    color: black;
+    color: ${(props) => props.theme.green};
   }
 `;
 

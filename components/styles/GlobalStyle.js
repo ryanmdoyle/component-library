@@ -2,7 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: red;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    box-sizing: border-box;
   }
 `;
 
